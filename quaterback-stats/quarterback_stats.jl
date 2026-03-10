@@ -2,13 +2,15 @@
     Quarterback Passer Rating Program
     CS524 Programming Assignment #2 — Julia Version
     Author: Prajun Trital
-    System: macOS (Julia v1.12.5)
-
-    Reads quarterback statistics from a user-specified input file,
-    computes passer rating and completion percentage for each player,
-    and produces two formatted reports:
-      1. Sorted alphabetically by last name, then first name
-      2. Sorted descending by passer rating
+    Date: 2026-03-10
+    Environment: VS Code, Terminal, Julia v1.12.5, macOS
+    To run: julia quarterback_stats.jl
+    Description:
+        Reads quarterback statistics from a user-specified input file,
+        computes passer rating and completion percentage for each player,
+        and produces two formatted reports:
+            1. Sorted alphabetically by last name, then first name
+            2. Sorted descending by passer rating
 =#
 
 # ── IMPORTS ──────────────────────────────────────────────────────────────────

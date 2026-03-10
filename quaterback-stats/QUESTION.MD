@@ -66,10 +66,6 @@ passerRating = ((value1 + value2 + value3 + value4) / 6) * 100
 ## Expected Output Format
 
 ```
-Welcome to the passer rating test program. I am going to read player
-statistics from an input data file. You will tell me the name of
-your input file.
-
 Enter the name of your input file: playerinput.txt
 
 QUARTERBACK REPORT --- 10 PLAYERS FOUND IN FILES

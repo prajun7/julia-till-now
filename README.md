@@ -38,7 +38,7 @@ julia quarterback_stats.jl
 When prompted, enter the input file name:
 
 ```
-Enter the name of your input file: playerinput.txt
+Enter the name of the input file: playerinput.txt
 ```
 
 The program reads the file, computes stats, and prints two reports to the console.

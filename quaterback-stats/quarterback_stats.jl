@@ -246,11 +246,7 @@ end
 # call it at the bottom of the file.
 
 function main()
-    println("Welcome to the passer rating test program. I am going to read player")
-    println("statistics from an input data file. You will tell me the name of")
-    println("your input file.")
-    println()
-    print("Enter the name of your input file: ")
+    print("Enter the name of the input file: ")
 
     # `readline()` reads one line from stdin — like Java's Scanner.nextLine().
     # `strip()` trims whitespace — like Java's .trim().

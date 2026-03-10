@@ -2,7 +2,7 @@
     Quarterback Passer Rating Program
     CS524 Programming Assignment #2 — Julia Version
     Author: Prajun Trital
-    System: macOS (Julia v1.x)
+    System: macOS (Julia v1.12.5)
 
     Reads quarterback statistics from a user-specified input file,
     computes passer rating and completion percentage for each player,
@@ -160,11 +160,16 @@ function parse_player(line::AbstractString)::Union{Quarterback, Nothing}
 end
 
 """
-    load_players(filename::String) -> Vector{Quarterback}
+    load_players(filename::AbstractString) -> Vector{Quarterback}
 
 Read all valid player lines from the given file path.
 """
-function load_players(filename::String)::Vector{Quarterback}
+# We use AbstractString (not String) so this function accepts both String
+# and SubString{String}. In Julia, `strip()` returns a SubString — a
+# lightweight view into the original string. AbstractString is the parent
+# type of all string types, similar to Java's CharSequence interface that
+# covers both String and StringBuilder.
+function load_players(filename::AbstractString)::Vector{Quarterback}
     # Vector{Quarterback} is Julia's typed dynamic array.
     # Java equivalent: ArrayList<Quarterback>
     # `Quarterback[]` creates an empty vector — like `new ArrayList<Quarterback>()`
